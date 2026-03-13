@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+
   <name>SaveUtils</name>
+
   <description>Adds "Save As with Timestamp" and "Save As Increment" commands to the File menu.</description>
+
   <version>2026.3.11</version>
-  <date>2026-03-11</date>
+
+  <date>2026-03-13</date>
+
   <maintainer email="hello@jefftml.com">Jeff Lange</maintainer>
+
   <license file="LICENSE">GPL-3.0-or-later</license>
-  <url type="repository" branch="master">https://github.com/jefe317/SaveUtils</url>
+
+  <url type="website">https://github.com/jefe317/SaveUtils</url>
+
+  <url branch="main" type="repository">https://github.com/jefe317/SaveUtils</url>
+
   <url type="readme">https://github.com/jefe317/SaveUtils/blob/main/README.md</url>
+
   <icon>Resources/icons/SaveUtilsLogo.svg</icon>
 
   <content>
     <workbench>
+      <tag>saveutils</tag>
       <classname>SaveUtilsWorkbench</classname>
       <subdirectory>./</subdirectory>
-      <tag>saveutils</tag>
     </workbench>
   </content>
 
