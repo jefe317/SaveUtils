@@ -1,6 +1,8 @@
-# SaveUtils – FreeCAD Addon
+# SaveUtils – FreeCAD Workbench Addon
 
-Adds two convenience commands to FreeCAD's **File** menu:
+![SaveUtils Example in the FreeCAD File menu](https://github.com/jefe317/SaveUtils/blob/main/Resources/SaveUtilsExample1.png)
+
+[SaveUtils](https://github.com/jefe317/SaveUtils/) adds two convenience commands to FreeCAD's **File** menu:
 
 | Command | What it does |
 |---|---|
@@ -9,7 +11,20 @@ Adds two convenience commands to FreeCAD's **File** menu:
 
 Both commands switch FreeCAD to the newly saved file so you keep working in it.
 
----
+## Behavior details
+
+### Save As with Timestamp
+- Pattern appended: `-YYYYMMDD-HHMMSS.FCStd`  
+- If the current filename already ends with this pattern it is **replaced**, not doubled.  
+  `design-20240101-120000.FCStd` → `design-20240315-093045.FCStd`
+- Unsaved document: a file-picker dialog asks for a base filename first.
+
+### Save As Increment
+- Pattern appended: `-NN.FCStd` (always zero-padded to 2 digits).  
+- If the filename already ends with `-N.FCStd` or `-NN.FCStd` the number is incremented:  
+  `design-03.FCStd` → `design-04.FCStd`  
+  `design-8.FCStd`  → `design-09.FCStd`
+- Unsaved document: a file-picker dialog asks for a base filename first.
 
 ## Installation
 
@@ -30,25 +45,6 @@ Both commands switch FreeCAD to the newly saved file so you keep working in it.
 
 If this repo is listed in a custom addon source, you can install it through  
 **Tools → Addon Manager**.
-
----
-
-## Behavior details
-
-### Save As with Timestamp
-- Pattern appended: `-YYYYMMDD-HHMMSS.FCStd`  
-- If the current filename already ends with this pattern it is **replaced**, not doubled.  
-  `design-20240101-120000.FCStd` → `design-20240315-093045.FCStd`
-- Unsaved document: a file-picker dialog asks for a base filename first.
-
-### Save As Increment
-- Pattern appended: `-NN.FCStd` (always zero-padded to 2 digits).  
-- If the filename already ends with `-N.FCStd` or `-NN.FCStd` the number is incremented:  
-  `design-03.FCStd` → `design-04.FCStd`  
-  `design-8.FCStd`  → `design-09.FCStd`
-- Unsaved document: a file-picker dialog asks for a base filename first.
-
----
 
 ## Requirements
 
