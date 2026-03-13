@@ -39,11 +39,8 @@ def _on_workbench_activated(name):
     try:
         import SaveUtils
         SaveUtils.install()
-        FreeCAD.Console.PrintMessage("=== SaveUtils: install() completed ===\n")
     except Exception as e:
         FreeCAD.Console.PrintError(f"=== SaveUtils install error: {e} ===\n")
 
 
 FreeCADGui.getMainWindow().workbenchActivated.connect(_on_workbench_activated)
-
-FreeCAD.Console.PrintMessage("=== SaveUtils: InitGui.py done ===\n")
