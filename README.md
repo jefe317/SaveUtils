@@ -1,6 +1,6 @@
 # SaveUtils – FreeCAD Workbench Addon
 
-![SaveUtils Example in the FreeCAD File menu](https://github.com/jefe317/SaveUtils/blob/main/Resources/SaveUtilsExample1.png)
+![SaveUtils Example in the FreeCAD File menu](https://jefftml.s3.amazonaws.com/thumbs/SaveUtilsExample1.png)
 
 [SaveUtils](https://github.com/jefe317/SaveUtils/) adds two convenience commands to FreeCAD's **File** menu:
 
