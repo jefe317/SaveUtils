@@ -28,23 +28,20 @@ Both commands switch FreeCAD to the newly saved file so you keep working in it.
 
 ## Installation
 
-### Manual (recommended for development)
+### Manual
 
-1. Copy the `SaveUtils/` folder into your FreeCAD **Mod** directory:
-
-   | OS | Path |
-   |---|---|
-   | Linux | `~/.local/share/FreeCAD/Mod/` |
-   | macOS | `~/Library/Application Support/FreeCAD/Mod/` |
-   | Windows | `%APPDATA%\FreeCAD\Mod\` |
-
-2. Restart FreeCAD.  
+Add this repository to your Addon Custom Repositories
+1. In FreeCAD, go to Edit > Preferences > Addon Manager.
+2. Under Costom Repositories, click the green plus button to Add https://github.com/jefe317/SaveUtils/ with the branch main.
+3. Click Apply, close the Preferences window.
+4. In Tools > Addon Manager, you can now search for "SaveUtils" and install it via the Install button.
+5. Restart FreeCAD.  
    The two items appear near the top of **File → Save As with Timestamp / Save As Increment**.
 
 ### Via Addon Manager
 
 If this repo is listed in a custom addon source, you can install it through  
-**Tools → Addon Manager**.
+**Tools > Addon Manager > Search for SaveUtils > Install**.
 
 ## Requirements
 
